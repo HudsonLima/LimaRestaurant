@@ -4,12 +4,12 @@ namespace Lima.Services.ProductAPI.Repository
 {
     public interface IProductRepository
     {
-        Task<IEnumerable<ProductDto>> GetProducts();
+        Task<IEnumerable<ProductDto>> GetProductsAsync();
 
-        Task<ProductDto> GetProducById(int productId);
+        Task<ProductDto> GetProducByIdAsync(int productId);
 
-        Task<ProductDto> CreateUpdateProduct(ProductDto productDto);
+        Task<ProductDto> CreateUpdateProductAsync(ProductDto productDto);
 
-        Task<bool> DeleteProduct(int productId);
+        Task<bool> DeleteProductAsync(int productId);
     }
 }
