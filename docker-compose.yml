@@ -1,6 +1,13 @@
 version: '3.4'
 
 services:
+
+  lima.web:
+    image: ${DOCKER_REGISTRY-}limaweb
+    build:
+      context: .
+      dockerfile: src/Lima.Web/Dockerfile
+      
   lima.services.productapi:
     image: ${DOCKER_REGISTRY-}limaservicesproductapi
     build:
@@ -21,3 +28,6 @@ services:
       - '11433:1433'    
     expose:
       - 1433
+
+
+
