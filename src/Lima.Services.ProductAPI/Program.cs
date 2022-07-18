@@ -30,6 +30,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+DatabaseManagementService.MigrationInitialization(app);
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
