@@ -9,7 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{AF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{832356E8-1BDA-4814-8A0B-8B63A671CB94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lima.Services.ProductAPI", "src\Lima.Services.ProductAPI\Lima.Services.ProductAPI.csproj", "{8D8F60DC-2488-4DF3-9318-BEC4AA728BA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lima.Services.ProductAPI", "src\Lima.Services.ProductAPI\Lima.Services.ProductAPI.csproj", "{8D8F60DC-2488-4DF3-9318-BEC4AA728BA4}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9A93A9EB-488B-42F6-9223-83A768834295}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{8D8F60DC-2488-4DF3-9318-BEC4AA728BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D8F60DC-2488-4DF3-9318-BEC4AA728BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D8F60DC-2488-4DF3-9318-BEC4AA728BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A93A9EB-488B-42F6-9223-83A768834295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A93A9EB-488B-42F6-9223-83A768834295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A93A9EB-488B-42F6-9223-83A768834295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A93A9EB-488B-42F6-9223-83A768834295}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

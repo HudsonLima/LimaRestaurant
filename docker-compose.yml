@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  lima.services.productapi:
+    image: ${DOCKER_REGISTRY-}limaservicesproductapi
+    build:
+      context: .
+      dockerfile: src/Lima.Services.ProductAPI/Dockerfile
+    depends_on:
+      - sqlserver
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    hostname: 'sqlserver'
+    environment:
+      ACCEPT_EULA: 'Y'
+      SA_PASSWORD: "Password!"
+    volumes:
+      - c:\dados\volumes\mssql:/var/opt/mssql3
+    ports:
+      - '11433:1433'    
+    expose:
+      - 1433
